@@ -1,0 +1,69 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-quiz {
+  width: 850px;
+  height: 450px;
+  border: none;
+  box-shadow: 10px 10px 15px gray;
+}
+.div-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75px;
+  background-color: rgb(228, 236, 253);
+  color: #101820ff;
+  font-weight: bold;
+}
+
+.div-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.div-question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: 95%;
+  height: 35px;
+  font-size: 18px;
+}
+
+.form {
+  width: 95%;
+}
+
+.div-option {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 10px;
+  width: 95%;
+  height: 50px;
+  background-color: rgb(243, 243, 243);
+  padding-left: 20px;
+  border-radius: 10px;
+  color: #a2a2a1ff;
+}
+
+.div-option:hover {
+  background-color: #a2a2a1ff;
+  color: rgb(243, 243, 243);
+}
+
+.div-button {
+  background-color: rgb(60, 154, 17);
+  width: 100px;
+  height: 45px;
+  border: none;
+  color: aliceblue;
+  border-radius: 5px;
+}
