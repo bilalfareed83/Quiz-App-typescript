@@ -55,8 +55,8 @@
 }
 
 .div-option:hover {
-  background-color: #a2a2a1ff;
-  color: rgb(243, 243, 243);
+  background-color: #dcdcdc;
+  color: #ffffffff;
 }
 
 .div-button {
@@ -66,4 +66,11 @@
   border: none;
   color: aliceblue;
   border-radius: 5px;
+}
+
+.scoreCard {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
+  color: #101820ff;
 }
