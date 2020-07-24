@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import Reveal from "react-reveal/Reveal";
+import "aos/dist/aos.css"; // You can also use <link> for styles
 
 const QuestionCard: React.FC<any> = ({ options, question, handleSubmit }) => {
   const [selectItem, setSelectItem] = useState("");
@@ -10,12 +10,23 @@ const QuestionCard: React.FC<any> = ({ options, question, handleSubmit }) => {
 
   return (
     <div className="div-body">
-      <div className="div-question">Q. {question}</div>
-      {/* <Reveal effect="fadeInUp"> */}
-      <form onSubmit={(e) => handleSubmit(e, selectItem)} className="form">
+      <div className="div-question" data-aos="zoom-in" data-aos-delay="600">
+        Q. {question}
+      </div>
+      <form
+        onSubmit={(e) => handleSubmit(e, selectItem)}
+        className="form"
+        data-aos="fade-up"
+        data-aos-delay="600"
+      >
         {options.map((opt: string, i: number) => {
           return (
-            <div key={i} className="div-option">
+            <div
+              key={i}
+              className="div-option"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
               <label>
                 <input
                   required
@@ -33,6 +44,7 @@ const QuestionCard: React.FC<any> = ({ options, question, handleSubmit }) => {
 
         <input type="submit" className="div-button" />
       </form>
+
       {/* </Reveal> */}
     </div>
   );

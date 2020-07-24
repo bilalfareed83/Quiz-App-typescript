@@ -39,13 +39,21 @@ function App() {
   };
   console.log(score);
   return (
-    <div className="App">
+    <div
+      className="App"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-back"
+      data-aos-delay="300"
+      data-aos-offset="0"
+    >
       <div className="div-quiz">
         <div className="div-header">Quiz</div>
         {showScore ? (
-          <div className="scoreCard">
-            Your score is {score}
+          <div className="scoreCard" data-aos="zoom-in" data-aos-delay="400">
+            Your score is {score}/5 <br />
+            <br />
             <button
+              className="div-button-2"
               onClick={() => {
                 setScore(0);
                 setShowScore(false);
